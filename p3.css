@@ -1,0 +1,39 @@
+/* ===== WORKS ===== */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 18px;
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* SMALLER NON-AVATAR IMAGES */
+.card img {
+  width: 50%;
+  margin: 20px auto 0;
+  display: block;
+}
+
+.card h3 {
+  margin: 15px 0;
+  color: #22d3ee;
+  text-align: center;
+}
+
+.card p {
+  padding-bottom: 20px;
+  opacity: 0.8;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 0 35px rgba(34,211,238,0.5);
+}

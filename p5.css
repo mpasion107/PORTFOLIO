@@ -1,0 +1,52 @@
+/* ===== CONTACT SECTION ===== */
+.contact-section {
+  padding: 90px 12%;
+  display: flex;
+  flex-direction: column;  
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-section h2 {
+    color: #22d3ee;
+    font-size: 50px;
+}
+/* WRAPPER (IMPORTANT) */
+.contact-grid {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;            /* force center */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  justify-items: center;     /* center cards */
+  align-items: center;
+}
+
+/* CONTACT CARD */
+.contact-card {
+  width: 100%;
+  max-width: 260px;
+  margin: 0 auto;            /* force center */
+  text-align: center;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(34,211,238,0.3);
+  border-radius: 16px;
+  padding: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* TEXT */
+.contact-card h4 {
+    color: #22d3ee;
+    text-align: center;
+}
+.contact-card p {
+    font-size: 0.90rem;
+}
+/* HOVER */
+.contact-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 0 25px rgba(34,211,238,0.5);
+}
